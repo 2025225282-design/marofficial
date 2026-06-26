@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Home|E-Resume</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home-body">
+
+    <header class="navbar">
+
+        <a href="student.html">
+            <img src="picture/logo.jpeg" class="logo" alt="logo">
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="personal.html">About Me</a>
+            <a href="education.html">Education</a>
+            <a href="skills.html">Skills</a>
+            <a href="experience.html">Experience</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+
+    <div class="home-container">
+        <h1 class="name">Hi I am <strong>Siti Nur Aqmar</strong></h1>
+        <p>Currently, i'm studying at Universiti Teknologi MARA (UiTM) as a Bachelor of Information Science (Hons) Information Systems Management.</p>
+        
+        <div class="card">
+            <h3>Objective</h3>
+            <p>This E-Resume is created to showcase my interest, education journey, skills, and experience throughout my studies. it reflects my personal growth, creativity, and professional development in the field of Information Systems.</p>
+        </div>
+    </div>
+    
+
+     <footer>
+        <p>Copyright @2026 | Siti Nur Aqmar | All Rights Reserved</p>
+        <p id="datetime"></p>
+    </footer>
+
+    <!-- Back To Top Button -->
+<button onclick="topFunction()" id="topBtn">
+    Back To Top
+</button>
+
+
+<script>
+
+// Welcome Message
+window.onload = function(){
+    alert("Welcome to My E-Resume!\nThank you for visiting my portfolio website.");
+};
+
+
+// Back To Top Function
+
+function topFunction(){
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+}
+
+
+// Live Date & Time
+
+function updateDateTime(){
+
+    const now = new Date();
+
+    document.getElementById("datetime").innerHTML =
+    now.toLocaleString();
+
+}
+
+
+setInterval(updateDateTime,1000);
+
+updateDateTime();
+
+
+</script>
+
+    
+</body>
+</html>

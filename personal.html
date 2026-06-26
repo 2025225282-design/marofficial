@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>About Me |E-Resume</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="student.html">
+            <img src="picture/logo.jpeg" alt="logo" class="logo">
+        </a>
+
+         <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="personal.html">About Me</a>
+            <a href="education.html">Education</a>
+            <a href="skills.html">Skills</a>
+            <a href="experience.html">Experience</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+
+    <section class="about-section">
+        <img src="picture/progamming.jpg" alt="background" class="shadow-image">
+
+        <div class="profile-container">
+            <img src="picture/myself.jpeg" alt="profile picture" class="profile-photo">
+            <div class="profile-info">
+                <h3>Siti Nur Aqmar</h3>
+                <p>Bachelor of Information Systems</p>
+                <p>Universiti Teknologi MARA</p>
+            </div>
+        </div>
+
+        <div class="about-content">
+            <div class="quote-card">
+                <p>Passionate about technology, creativity, and continuous learning.</p>
+            </div>
+            <div class="about-card">
+                <h2>&#128100; Biography</h2>
+                <p><strong>Full Name:</strong>SITI NUR AQMAR BINTI AMRAN</p>
+                <p><strong>Date of Birth:</strong>20 APRIL 2005</p>
+                <p><strong>Email:</strong>sitiaqmar2005@gmail.com.my</p>
+                <p>I am currently pursuing a Bachelor of Information Systems at Universiti Teknologi MARA (UiTM). This programme has provided me with valuable knowledge in technology, system development, database management, and problem-solving skills. Through my studies, I continue to explore how information technology can support organisations and improve businnes operations.</p>
+            </div>
+
+            <div class="about-card hobby-card">
+                <h2>&#127759; Interest& Hobbies</h2>
+
+                <ul class="hobby-list">
+                    <li>&#127966; Nature Exploration</li>
+                    <li>&#128220; History</li>
+                    <li>&#127909; Video Content Creation</li>
+                    <li>&#128214; Reading Books</li>
+                    <li>&#127759; Learning New Language</li>
+                    <li>&#128248; Nature Photography</li>
+                    <li>&#127992; Playing Badminton</li>
+                </ul>
+            </div>
+
+            <div class="about-card video-card">
+                <h2>&#127909; Introduction Video</h2>
+                
+                <div class="video-placeholder">
+
+                    <video controls>
+                        <source src="video/video erusume.mp4" type="video/mp4">
+                    </video>
+
+                    <p class="video-note">
+                        My self Introduction video will be displayed here.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright @2026 | Siti Nur Aqmar | All Rights Reserved</p>
+        <p id="datetime"></p>
+    </footer>
+
+    <!-- Back To Top Button -->
+<button onclick="topFunction()" id="topBtn">
+    Back To Top
+</button>
+
+
+<script>
+// Back To Top Function
+
+function topFunction(){
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+}
+
+
+// Live Date & Time
+
+function updateDateTime(){
+
+    const now = new Date();
+
+    document.getElementById("datetime").innerHTML =
+    now.toLocaleString();
+
+}
+
+
+setInterval(updateDateTime,1000);
+
+updateDateTime();
+
+
+</script>
+</body>
+</html>

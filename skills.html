@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Skills|E-Resume</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="student.html">
+            <img src="picture/logo.jpeg" alt="logo" class="logo">
+        </a>
+
+         <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="personal.html">About Me</a>
+            <a href="education.html">Education</a>
+            <a href="skills.html">Skills</a>
+            <a href="experience.html">Experience</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+
+    <section class="skills-section">
+
+        <div class="quote-card">
+            <p>"Skills are developed through experience, dedication, and continuous learning."</p>
+        </div>
+
+        <h1 class="skills-title"> My Skills</h1>
+        <div class="skills-card">
+            <h2> Language Skills</h2>
+
+            <div class="skill">
+                <div class="skill-info"></div>
+                <span>Malay</span>
+                <span>100%</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width:100%"></div>
+                </div>
+            </div>
+
+             <div class="skill">
+                 <div class="skill-info"></div>
+                <span>English</span>
+                <span>85%</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width:85%"></div>
+                </div>
+            </div>
+
+             <div class="skill">
+                 <div class="skill-info"></div>
+                <span>Chinese</span>
+                <span>80%</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width:80%"></div>
+                </div>
+            </div>
+        </div>
+
+       <div class="skills-card technical-card">
+        <h2> Technical Skills</h2>
+        <div class="skill">
+             <div class="skill-info"></div>
+            <span>HTML</span>
+            <span>88%</span>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width:88%"></div>
+            </div>
+        </div>
+
+         <div class="skill">
+             <div class="skill-info"></div>
+            <span>CSS</span>
+            <span>85%</span>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width:80%"></div>
+            </div>
+        </div>
+
+         <div class="skill">
+             <div class="skill-info"></div>
+            <span>Video Editing</span>
+            <span>80%</span>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width:80%"></div>
+            </div>
+        </div>
+
+         <div class="skill">
+             <div class="skill-info"></div>
+            <span>Photo Editing</span>
+            <span>87%</span>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width:87%"></div>
+            </div>
+        </div>
+       </div>
+
+       <div class="skills-card">
+        <h2> Professional Skills</h2>
+
+        <div class="skill">
+             <div class="skill-info"></div>
+            <span>Leadership</span>
+            <span>90%</span>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width:90%"></div>
+            </div>
+        </div>
+
+         <div class="skill">
+             <div class="skill-info"></div>
+            <span>Communication</span>
+            <span>89%</span>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width:89%"></div>
+            </div>
+        </div>
+
+         <div class="skill">
+             <div class="skill-info"></div>
+            <span>Teamwork</span>
+            <span>98%</span>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width:98%"></div>
+            </div>
+        </div>
+
+         <div class="skill">
+             <div class="skill-info"></div>
+            <span>Work Under Pressure</span>
+            <span>95%</span>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width:95%"></div>
+            </div>
+        </div>
+
+         <div class="skill">
+             <div class="skill-info"></div>
+            <span>Creativity</span>
+            <span>88%</span>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width:88%"></div>
+            </div>
+        </div>
+
+         <div class="skill">
+             <div class="skill-info"></div>
+            <span>Problem Solving</span>
+            <span>89%</span>
+
+            <div class="skill-bar">
+                <div class="skill-progress" style="width:89%"></div>
+            </div>
+        </div>
+
+       </div>
+
+    </section>
+
+     <footer>
+        <p>Copyright @2026 | Siti Nur Aqmar | All Rights Reserved</p>
+        <p id="datetime"></p>
+    </footer>
+
+    <!-- Back To Top Button -->
+<button onclick="topFunction()" id="topBtn">
+    Back To Top
+</button>
+
+
+<script>
+// Back To Top Function
+
+function topFunction(){
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+}
+
+
+// Live Date & Time
+
+function updateDateTime(){
+
+    const now = new Date();
+
+    document.getElementById("datetime").innerHTML =
+    now.toLocaleString();
+
+}
+
+
+setInterval(updateDateTime,1000);
+
+updateDateTime();
+
+
+</script>
+</body>
+</html>
